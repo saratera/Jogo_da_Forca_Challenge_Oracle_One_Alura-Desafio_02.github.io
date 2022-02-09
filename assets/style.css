@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+body{
+    font-family: 'Nova Round', cursive;
+   background-color: rgb(107, 147, 221);
+}
+.menu{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.novasPalavras{
+    margin: 15px;
+}
+.novasPalavras input{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+.adcPalavra{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;    
+    background-color: white;
+    font-family: 'Nova Round', cursive;
+    
+}
+.adcPalavra:hover{
+    background-color: rgb(172, 61, 61);
+}
+
+
+.palavra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+canvas{
+    background-color: darkcyan;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+    
+}
+.campoLetra{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 40px;
+    background-color: coral;
+    border: solid 2px black;
+}
+.CampoLetrasUsadas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.removerCampoLetras{
+    display: none;
+}
+
+.letrasUsadas{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 40px;
+    border: solid 2px black;
+}
+.jogo{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: none;
+}
+.areaDica{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size:18px;
+    font-weight: 600;
+    
+  
+}
+.dica{
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.modal{
+  display: none;
+
+}
+
+.modalGanhou{
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.titulo{
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+
+#iniciarJogo{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Nova Round', cursive;
+}
+#iniciarJogo:hover{
+    background-color: rgb(172, 61, 61);
+}
+#reiniciar{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Nova Round', cursive;
+}
+#reiniciar:hover{
+    background-color: rgb(172, 61, 61);
+}
+
+
+@media screen and (max-width: 620px) {
+    .novasPalavras{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .novasPalavras input {
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .CampoLetrasUsadas{
+       
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+    .campoLetra{
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+    .modalGanhou{
+        width: 200px;
+        height: 200px;
+    }
+    .modalGanhou img{
+        width: 100px;
+        height: 100px;
+    }
+}

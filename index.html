@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Jogo d forca</title>
+</head>
+<body>
+    <header> 
+      <div class="menu">
+          <div class='jogar'>
+              <button id="iniciarJogo">Iniciar Jogo</button>
+            </div>
+          <div class="novasPalavras">
+                <input type="text" name="dica" id="novaPalavra" placeholder="inserir nova palavra">
+                <input type="text" name="palavra" id="novaDica" placeholder="iserir dica para palavra">
+                <button class="adcPalavra"> Adicionar Palavra</button>
+          </div> 
+          <h2>Jogo da Forca </h2>         
+      </div>
+    </header>
+    <section>
+       
+        <div class="jogo">
+            <button id="reiniciar">Reiniciar</button>
+            <div class="areaDica"> Dica:
+                <div class="dica"></div>
+            </div>
+            <canvas> </canvas>
+            <div class="forca">  </div>
+            <div class="CampoLetrasUsadas"></div>
+            <div areaDicaMaisPalavra>
+                <div class="Dica"></div>
+                <div class="palavra"> </div>
+    
+            </div>
+            
+            <div class="modal">
+                
+            </div>
+
+        </div>
+        
+    </section>
+   
+    <footer>
+
+    </footer>
+    <script src="./assets/BdPalavras.js"></script>
+    <script src="./assets/main.js"></script>
+    <script src="./assets/acoes.js"></script>
+    <script src="./assets/canvasForca.js"></script>
+    <script src="./assets/modal.js"></script>
+</body>
+</html>
